@@ -32,9 +32,9 @@ const Search : React.FC = (props) => {
         <div>
             <Form className="mb-2" onSubmit={handlesubmit}>
                 <FormControl className="mb-2" type="text" placeholder="Search User" value={search} onChange={changehandler}/>
-                <Button onClick={()=>handlesubmit} variant="primary" type="submit">Search</Button>
-            </Form>
+                <Button className="mr-1" onClick={()=>handlesubmit} variant="primary" type="submit">Search</Button>
             {users.length>0 && <Button onClick={githubContext.clearUsers} variant="danger">Clear users</Button>}
+            </Form>
         </div>
     )
 }

@@ -48,10 +48,10 @@ const User: React.FC = () => {
                         </Col>
                     </Row>
                     <Row className="justify-content-center my-2 py-2 mx-0" style={{ border: "1px solid lightgrey" }}>
-                        <Badge variant="primary">Followers : {user.followers}</Badge>
-                        <Badge variant="secondary">Following : {user.following}</Badge>
-                        <Badge variant="warning">Public Repos :{user.public_repos}</Badge>
-                        <Badge variant="dark">Public_Gists : {user.public_gists}</Badge>
+                        <Badge className="mx-2" variant="primary">Followers : {user.followers}</Badge>
+                        <Badge className="mx-2" variant="secondary">Following : {user.following}</Badge>
+                        <Badge className="mx-2" variant="warning">Public Repos :{user.public_repos}</Badge>
+                        <Badge className="mx-2" variant="dark">Public_Gists : {user.public_gists}</Badge>
                     </Row>
                     {repos !== [] && <Repos />}
                 </>
