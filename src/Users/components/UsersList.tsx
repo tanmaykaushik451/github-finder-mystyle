@@ -20,6 +20,7 @@ const UsersList: React.FC = () => {
         )
     }
     if(users !== []){
+        console.log('users=============',users)
        return (
            users.map((user: any) => {
                         return (
